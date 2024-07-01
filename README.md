@@ -67,35 +67,36 @@ Descriptive Statistics Summary of Solar Power Generation and Weather Data:
 We also plot histograms to identify the frequencies of variables distribution:
 *  Histogram of DC Power
   
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/histogram.png)
-   
+![histogram](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/a5c03fe2-8b0f-42c0-800d-3de198454988)
+
    The histogram illustrates that DC Power values are right-skewed, with the majority concentrated in the range of 0 to 400 kW.
 *  Histogram of AC Power
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/hist%20ac%20power.png)
-   
+  
+   ![hist ac power](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/80b26a84-e095-487a-b550-5a373efc42f5)
+
    The AC Power histogram shows a right-skewed distribution, with the highest frequency of values concentrated between 0 and 40 kW.
 *  Histogram of Daily Yield
   
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/hist%20daily%20yield.png)
-   
+   ![hist daily yield](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/97337836-0574-4c29-82d0-a5fb5b3236ab)
+
    The daily yields range from 0 to 300 kW, showing a right-skewed distribution.
    
 *  Histogram of Ambient Temperature
   
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/hist%20ambient%20temperature.png)
-   
+   ![hist ambient temperature](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/9e7b2f6a-3657-4012-860e-ad69c1c6e2d2)
+
    The ambient temperature peaked at 28 degrees Celsius, showing a moderately skewed distribution.
    
 *  Histogram of Module Temperature
   
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/hist%20module%20temperature.png)
-   
+   ![hist module temperature](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/f7324d24-a7f2-41c2-b880-1cd539b5422e)
+
    The module temperature peaked at 40 degrees Celsius, showing a moderately skewed distribution.
    
 *  Histogram of Irradiation
-  
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/hist%20irradiation.png)
-   
+
+   ![hist irradiation](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/9df61170-96b2-429b-8025-09812147e03e)
+
    The histogram shows that irradiation is predominantly concentrated between 0 and 0.0286 W/m<sup>2</sup> , with a left-skewed distribution.
 
 ### EDA Multivariate
@@ -246,6 +247,7 @@ R2 score Boosting :  0.9752660010210168
 R2 score Linear Regression:  0.9676441599956099
 R2 score SVR:  0.9741192559121683
 ```
+## Conclusion
 
 
 
