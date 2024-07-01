@@ -97,6 +97,18 @@ We also plot histograms to identify the frequencies of variables distribution:
    The histogram shows that irradiation is predominantly concentrated between 0 and 0.0286 W/m<sup>2</sup> , with a left-skewed distribution.
 
 ### EDA Multivariate
+Since the datasets lack categorical features, we will continue analyzing the different types of variables numerically by plotting the correlation graph and heatmap.
+*  Correlation Graph:
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/pairplot.png)
+*  Heatmap:
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/corr%20matrix.png)
+
+   Based on the correlation matrix, it can be concluded that there is little correlation between `TOTAL_YIELD` and `AMBIENT_TEMPERATURE`, `MODULE_TEMPERATURE`, and `IRRADIATION`.
+
+## Data Preparation
+Since we do not have categorical values, we will not use one-hot encoding methods. Instead, we will continue to split the data into training and test sets, with 90% for training and 10% for testing. Additionally, we will implement standardization to transform the features into a format that is more easily processed by algorithms. Standardization is the most commonly used transformation technique in the modeling preparation stage.
+
+### Train-test-split
 
 
 
