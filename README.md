@@ -50,7 +50,7 @@ Here is the analysis of EDA Univariate:
 *  Average of Irradiation per Day
    ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/15ac849066923a8ae922629bf7c702f533907a29/Images/irradiation.png)
 
-Descriptive Statistics Summary of Solar Power Generation and Weather Data
+Descriptive Statistics Summary of Solar Power Generation and Weather Data:
 
 | Statistic   | DC_POWER      | AC_POWER   | TOTAL_YIELD   | AMBIENT_TEMPERATURE | MODULE_TEMPERATURE | IRRADIATION   |
 |-------------|---------------|------------|---------------|---------------------|--------------------|---------------|
@@ -61,6 +61,43 @@ Descriptive Statistics Summary of Solar Power Generation and Weather Data
 | 75%         | 6365.468750   | 623.561161 | 7.268751e+06  | 27.960429           | 41.693659          | 0.454880      |
 | max         | 14471.125000  | 1410.950000| 7.846821e+06  | 35.252486           | 65.545714          | 1.221652      |
 | std         | 4036.441826   | 394.394865 | 4.162707e+05  | 3.361300            | 12.308283          | 0.301948      |
+
+We also plot histograms to identify the frequencies of variables distribution:
+*  Histogram of DC Power
+  
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/histogram.png)
+   
+   The histogram illustrates that DC Power values are right-skewed, with the majority concentrated in the range of 0 to 400 kW.
+*  Histogram of AC Power
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/hist%20ac%20power.png)
+   
+   The AC Power histogram shows a right-skewed distribution, with the highest frequency of values concentrated between 0 and 40 kW.
+*  Histogram of Daily Yield
+  
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/hist%20daily%20yield.png)
+   
+   The daily yields range from 0 to 300 kW, showing a right-skewed distribution.
+   
+*  Histogram of Ambient Temperature
+  
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/hist%20ambient%20temperature.png)
+   
+   The ambient temperature peaked at 28 degrees Celsius, showing a moderately skewed distribution.
+   
+*  Histogram of Module Temperature
+  
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/hist%20module%20temperature.png)
+   
+   The module temperature peaked at 40 degrees Celsius, showing a moderately skewed distribution.
+   
+*  Histogram of Irradiation
+  
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/hist%20irradiation.png)
+   
+   The histogram shows that irradiation is predominantly concentrated between 0 and 0.0286 W/m<sup>2</sup> , with a left-skewed distribution.
+
+### EDA Multivariate
+
 
 
 
