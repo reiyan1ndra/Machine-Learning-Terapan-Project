@@ -106,9 +106,11 @@ Since the datasets lack categorical features, we will continue analyzing the dif
    Based on the correlation matrix, it can be concluded that there is little correlation between `TOTAL_YIELD` and `AMBIENT_TEMPERATURE`, `MODULE_TEMPERATURE`, and `IRRADIATION`.
 
 ## Data Preparation
+
 Since we do not have categorical values, we will not use one-hot encoding methods. Instead, we will continue to split the data into training and test sets, with 90% for training and 10% for testing. Additionally, we will implement standardization to transform the features into a format that is more easily processed by algorithms. Standardization is the most commonly used transformation technique in the modeling preparation stage.
 
 ### Train-test-split
+
 Due to the large size of the dataset, the train-test-split method will allocate 90% for training and 10% for testing.
 
 ```
@@ -116,7 +118,9 @@ from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=123)
 ```
+
 Total of the overall dataset, training data, and test data are as follows:
+
 ```
 Total samples in whole dataset: 36685
 Total samples in train dataset: 33016
@@ -125,6 +129,7 @@ Total samples in test dataset: 3669
 
 ### Standardization
 The next step is standardization. Standardization is the most commonly used transformation technique in the modeling preparation stage. For numerical features, we will not perform transformation using one-hot encoding like we do for categorical features. Instead, we will use the StandardScaler technique from the Scikit-learn library.
+
 ```
 from sklearn.preprocessing import StandardScaler
 
@@ -137,11 +142,15 @@ scaler = StandardScaler()
 scaler.fit(X_train[numeric_cols])
 X_train[numeric_cols] = scaler.transform(X_train.loc[:, numeric_cols])
 X_train[numeric_cols].head()
+
 ```
+
 StandardScaler standardizes features by subtracting the mean (average value) and then dividing by the standard deviation to shift the distribution. It produces a distribution with a standard deviation of 1 and a mean of 0. Approximately 68% of the values will fall between -1 and 1.
+
 ```
 X_train[numeric_cols].describe().round(4)
 ```
+
 |           | DAILY_YIELD | TOTAL_YIELD | AMBIENT_TEMPERATURE | MODULE_TEMPERATURE | IRRADIATION |
 |-----------|-------------|-------------|---------------------|--------------------|-------------|
 | count     | 33016.0000  | 33016.0000  | 33016.0000          | 33016.0000         | 33016.0000  |
