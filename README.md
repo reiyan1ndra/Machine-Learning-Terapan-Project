@@ -232,7 +232,11 @@ Based on the training and test scores for each model, **Random Forest (RF)** per
 |---------|----------|----------------|---------------|---------------------|-----------------------------|----------------|
 | 14173   | 48.6375  | 57.0           | 49.9          | 48.0                | 78.2                        | 51.2           |
 
-This can also be measured by the R2 value, where Random Forest has a higher value compared to KNN, Boosting, Linear Regression, and SVR, indicating that Random Forest is highly effective in predicting values.
+This can also be measured by the R2 value, 
+
+![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/97f01c488ee42e1e971ef801b3622c6c81487383/Images/R%20squared.png)
+
+where Random Forest has a higher value compared to KNN, Boosting, Linear Regression, and SVR, indicating that Random Forest is highly effective in predicting values.
 ```
 R2 score KNN :  0.9752660010210168
 R2 score RF :  0.9817065065396017
