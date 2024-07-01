@@ -162,6 +162,70 @@ X_train[numeric_cols].describe().round(4)
 | 75%       | 0.8557      | 0.6952      | 0.7156              | 0.7644             | 0.7678      |
 | max       | 2.0589      | 2.0854      | 2.4044              | 2.3208             | 2.7445      |
 
+## Model Development
+Here are the types of model development that might be appropriate for data prediction:
+*  KNN (k-nearest neighbors)
+*  Random Forest
+*  Boost Regressor
+*  Linear Regression
+*  SVR (Support Vector Regression)
+
+### KNN
+**KNN (K-nearest Neighbors)** is a relatively simple algorithm compared to others. It uses 'feature similarity' to predict the value of new data points. In other words, each new data point is assigned a value based on how similar it is to points in the training set. KNN works by comparing the distance of a sample to other training samples and selecting the k nearest neighbors (where k is a positive integer).
+
+```
+knn = KNeighborsRegressor(n_neighbors=10)
+```
+Here, the parameter `n_neighbors` is set to 10, which means the algorithm will consider the 10 nearest neighbors. The parameter will then take the data from these 10 closest samples to create a new data point.
+
+### Random Forest
+**Random Forest** is an ensemble learning method used for classification, regression, and other tasks. It operates by constructing multiple decision trees during training and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees.
+
+```
+RF = RandomForestRegressor(n_estimators=50, max_depth=16, random_state=55, n_jobs=-1)
+```
+Here, the parameter `n_estimators` is set to 50, which means it will create 50 tree branches, with a maximum depth of 16.
+
+
+### Boost Regressor
+A **Boost Regressor**, also known as a boosting algorithm in regression tasks, is an ensemble learning technique that combines the predictions of several base estimators (usually weak learners) to improve the overall prediction accuracy.
+
+```
+boosting = AdaBoostRegressor(learning_rate=0.05, random_state=55)
+```
+Here, we are using a learning_rate parameter of 0.05, which means the model will be trained with a learning rate of 0.05 and with a random_state of 55.
+
+### Linear Regression
+**Linear regression** is a statistical method used to model the relationship between a dependent variable and one or more independent variables by fitting a linear equation to observed data.
+
+```
+lr_model = LinearRegression()
+```
+
+### SVR (Support Vector Regression)
+**Support Vector Regression (SVR)** is a supervised learning algorithm that applies the principles of Support Vector Machines (SVM) to regression tasks. It finds the best-fit line within a specified margin of tolerance (epsilon) and aims to minimize the prediction error by using a subset of the training data called support vectors. The goal is to create a model that predicts continuous values while maintaining robustness against outliers.
+
+```
+svr = SVR(kernel='rbf', C=100, gamma=0.1, epsilon=0.1)
+```
+Here, SVR is initialized with a radial basis function (RBF) kernel, C=100 for regularization strength, gamma=0.1 for kernel coefficient, and epsilon=0.1 for the margin of tolerance.
+
+---
+Model Performance Comparison Results:
+
+|          | Train        | Test         |
+|----------|--------------|--------------|
+| KNN      | 2569.979923  | 3400.414956  |
+| RF       | 639.088477   | 2514.978222  |
+| Boosting | 4608.368898  | 4943.855889  |
+| LinearRegression | 4123.071216 | 4448.260969 |
+| SVR      | 3229.136262  | 3558.068768  |
+
+Based on the training and test scores for each model, **Random Forest (RF)** performs the best with the lowest error on both training and test sets, indicating strong performance and potential robustness in generalization.
+
+## Model Evaluation
+The evaluation metric we will use for this prediction is MSE or Mean Squared Error, which calculates the average of the squared differences between actual values and predicted values. MSE is defined by the following equation:
+![image.png]()
 
 
 
