@@ -210,7 +210,10 @@ svr = SVR(kernel='rbf', C=100, gamma=0.1, epsilon=0.1)
 ```
 Here, SVR is initialized with a radial basis function (RBF) kernel, C=100 for regularization strength, gamma=0.1 for kernel coefficient, and epsilon=0.1 for the margin of tolerance.
 
----
+## Model Evaluation
+The evaluation metric we will use for this prediction is MSE or Mean Squared Error, which calculates the average of the squared differences between actual values and predicted values. MSE is defined by the following equation:
+![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/f705e93df7990701565a11e631b3826447f0b654/Images/2021071619431112f1106e20559e77c855cea11d1b1479.jpeg)
+
 Model Performance Comparison Results:
 
 |          | Train        | Test         |
@@ -221,11 +224,33 @@ Model Performance Comparison Results:
 | LinearRegression | 4123.071216 | 4448.260969 |
 | SVR      | 3229.136262  | 3558.068768  |
 
-Based on the training and test scores for each model, **Random Forest (RF)** performs the best with the lowest error on both training and test sets, indicating strong performance and potential robustness in generalization.
+![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/f705e93df7990701565a11e631b3826447f0b654/Images/train_test.png)
 
-## Model Evaluation
-The evaluation metric we will use for this prediction is MSE or Mean Squared Error, which calculates the average of the squared differences between actual values and predicted values. MSE is defined by the following equation:
-![image.png]()
+Based on the training and test scores for each model, **Random Forest (RF)** performs the best with the lowest error on both training and test sets, indicating strong performance and potential robustness in generalization. It emerges as the most promising model, demonstrating lower errors and balanced performance across training and test sets. Furthermore, it can be seen from the table that predictions using Random Forest approach the y values with differences that are quite close.
+
+|    **     | y_true   | prediction_KNN | prediction_RF | prediction_Boosting | prediction_LinearRegression | prediction_SVR |
+|---------|----------|----------------|---------------|---------------------|-----------------------------|----------------|
+| 14173   | 48.6375  | 57.0           | 49.9          | 48.0                | 78.2                        | 51.2           |
+
+This can also be measured by the R2 value, where Random Forest has a higher value compared to KNN, Boosting, Linear Regression, and SVR, indicating that Random Forest is highly effective in predicting values.
+```
+R2 score KNN :  0.9752660010210168
+R2 score RF :  0.9817065065396017
+R2 score Boosting :  0.9752660010210168
+R2 score Linear Regression:  0.9676441599956099
+R2 score SVR:  0.9741192559121683
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
