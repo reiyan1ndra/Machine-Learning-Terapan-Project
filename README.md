@@ -248,8 +248,6 @@ R2 score SVR:  0.9741192559121683
 
 
 
-![irradiation](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/457611c5-ee0f-4ce2-baf1-80eb8df31d6d)
-
 
 
 
