@@ -42,11 +42,11 @@ The dataset used for this project can be downloaded from [Kaggle](https://www.ka
 ### EDA Univariate
 Berikut merupakan the analysis of EDA Univariate:
 *  Average of Daily Yield per Day
-   ![image.png]()
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/15ac849066923a8ae922629bf7c702f533907a29/Images/avg%20daily%20yield.png)
 *  Average of AC & DC Power Generated per Day
-   ![image.png]()
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/15ac849066923a8ae922629bf7c702f533907a29/Images/avg%20ac%20dc%20power.png)
 *  Average of Ambient and Module Temperature per Day
-   ![image.png]()
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/15ac849066923a8ae922629bf7c702f533907a29/Images/avg%20temp.png)
 *  Average of Irradiation per Day
    ![image.png]()
 
