@@ -42,10 +42,13 @@ The dataset used for this project can be downloaded from [Kaggle](https://www.ka
 ### EDA Univariate
 Berikut merupakan the analysis of EDA Univariate:
 *  Average of Daily Yield per Day
-  
+   ![image.png]()
 *  Average of AC & DC Power Generated per Day
+   ![image.png]()
 *  Average of Ambient and Module Temperature per Day
+   ![image.png]()
 *  Average of Irradiation per Day
+   ![image.png]()
 
 
 
