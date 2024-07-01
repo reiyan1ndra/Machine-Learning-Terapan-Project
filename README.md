@@ -5,6 +5,8 @@
 ## Project Domain
 This project focuses on the management and optimization of solar power plants in India. The data used in this project was collected from two solar power plants over a 34-day period. There are two types of data collected: power generation data at the inverter level and sensor data at the plant level. Each inverter has multiple lines of solar panels connected to it, while the sensor data is collected from a single array of sensors optimally placed throughout the plant. By using the available data, this project aims to provide valuable insights to enhance the efficiency and performance of solar power plants through more accurate predictions, timely maintenance, and identification of equipment issues.
 
+Given the increasing global awareness of climate change, reducing carbon emissions is a paramount goal. Solar energy, as a renewable source, plays a crucial role in reducing reliance on fossil fuels and carbon emissions, aligning with green initiatives and emission reduction targets. Precise predictions enable better operational adjustments, ensuring optimal utilization of solar energy and minimizing emissions from other energy sources.
+
 
 ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/a5ec9fa2cbc2796fb11fdf84f3f3b9797c3cbd5e/Images/Solar%20Electricity%20Production.png)
 ## Business Understanding
