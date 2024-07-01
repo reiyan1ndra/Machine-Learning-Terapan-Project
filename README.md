@@ -40,7 +40,7 @@ The dataset used for this project can be downloaded from [Kaggle](https://www.ka
 *   `IRRADIATION`: Amount of irradiation (W/m<sup>2</sup>) for the 15 minute interval.
 
 ### EDA Univariate
-Berikut merupakan the analysis of EDA Univariate:
+Here is the analysis of EDA Univariate:
 *  Average of Daily Yield per Day
    ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/15ac849066923a8ae922629bf7c702f533907a29/Images/avg%20daily%20yield.png)
 *  Average of AC & DC Power Generated per Day
@@ -48,8 +48,19 @@ Berikut merupakan the analysis of EDA Univariate:
 *  Average of Ambient and Module Temperature per Day
    ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/15ac849066923a8ae922629bf7c702f533907a29/Images/avg%20temp.png)
 *  Average of Irradiation per Day
-   ![image.png]()
+   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/15ac849066923a8ae922629bf7c702f533907a29/Images/irradiation.png)
 
+Descriptive Statistics Summary of Solar Power Generation and Weather Data
+
+| Statistic   | DC_POWER      | AC_POWER   | TOTAL_YIELD   | AMBIENT_TEMPERATURE | MODULE_TEMPERATURE | IRRADIATION   |
+|-------------|---------------|------------|---------------|---------------------|--------------------|---------------|
+| mean        | 3147.177450   | 307.778375 | 6.978728e+06  | 25.558521           | 31.244997          | 0.232305      |
+| min         | 0.000000      | 0.000000   | 6.183645e+06  | 20.398505           | 18.140415          | 0.000000      |
+| 25%         | 0.000000      | 0.000000   | 6.512007e+06  | 22.724491           | 21.123944          | 0.000000      |
+| 50%         | 428.571429    | 41.450000  | 7.146685e+06  | 24.670178           | 24.818984          | 0.031620      |
+| 75%         | 6365.468750   | 623.561161 | 7.268751e+06  | 27.960429           | 41.693659          | 0.454880      |
+| max         | 14471.125000  | 1410.950000| 7.846821e+06  | 35.252486           | 65.545714          | 1.221652      |
+| std         | 4036.441826   | 394.394865 | 4.162707e+05  | 3.361300            | 12.308283          | 0.301948      |
 
 
 
