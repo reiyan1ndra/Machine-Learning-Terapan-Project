@@ -7,8 +7,8 @@ This project focuses on the management and optimization of solar power plants in
 
 Given the increasing global awareness of climate change, reducing carbon emissions is a paramount goal. Solar energy, as a renewable source, plays a crucial role in reducing reliance on fossil fuels and carbon emissions, aligning with green initiatives and emission reduction targets. Precise predictions enable better operational adjustments, ensuring optimal utilization of solar energy and minimizing emissions from other energy sources.
 
+![Solar Electricity Production](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/b3ba1d4c-970d-4ff5-aeb4-7c89e0c67b38)
 
-![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/a5ec9fa2cbc2796fb11fdf84f3f3b9797c3cbd5e/Images/Solar%20Electricity%20Production.png)
 ## Business Understanding
 The production of energy from solar panels is greatly influenced by weather conditions such as sunlight, clouds, and rainfall. Predicting these weather fluctuations with high accuracy, especially for a few days ahead, is challenging. Each inverter has different efficiencies and performance characteristics. Understanding how changes in efficiency affect energy production predictions is a separate challenge. Therefore, it is important to seek robust evaluation methods for predictive models to enhance accurate energy production, ensuring that the models can handle unforeseen weather variations.
 
@@ -106,9 +106,11 @@ We also plot histograms to identify the frequencies of variables distribution:
 ### EDA Multivariate
 Since the datasets lack categorical features, we will continue analyzing the different types of variables numerically by plotting the correlation graph and heatmap.
 *  Correlation Graph:
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/pairplot.png)
+   ![pairplot](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/a437cdd2-07c7-467b-8639-94b3c6974aea)
+
 *  Heatmap:
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/bdc909d55707762cc47a6b9333d78d95ad58c96f/Images/corr%20matrix.png)
+   ![corr matrix](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/337af2e6-1d2a-4405-8a17-604515564535)
+
 
    Based on the correlation matrix, it can be concluded that there is little correlation between `TOTAL_YIELD` and `AMBIENT_TEMPERATURE`, `MODULE_TEMPERATURE`, and `IRRADIATION`.
 
@@ -219,7 +221,8 @@ Here, SVR is initialized with a radial basis function (RBF) kernel, C=100 for re
 
 ## Model Evaluation
 The evaluation metric we will use for this prediction is MSE or Mean Squared Error, which calculates the average of the squared differences between actual values and predicted values. MSE is defined by the following equation:
-![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/f705e93df7990701565a11e631b3826447f0b654/Images/2021071619431112f1106e20559e77c855cea11d1b1479.jpeg)
+
+![2021071619431112f1106e20559e77c855cea11d1b1479](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/0474e291-ad6b-4324-a094-3fe897d50b14)
 
 Model Performance Comparison Results:
 
@@ -231,7 +234,8 @@ Model Performance Comparison Results:
 | LinearRegression | 4123.071216 | 4448.260969 |
 | SVR      | 3229.136262  | 3558.068768  |
 
-![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/f705e93df7990701565a11e631b3826447f0b654/Images/train_test.png)
+![train_test](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/1b6e9090-3080-4003-b907-2cd6e26289d1)
+
 
 Based on the training and test scores for each model, **Random Forest (RF)** performs the best with the lowest error on both training and test sets, indicating strong performance and potential robustness in generalization. It emerges as the most promising model, demonstrating lower errors and balanced performance across training and test sets. Furthermore, it can be seen from the table that predictions using Random Forest approach the y values with differences that are quite close.
 
@@ -241,7 +245,7 @@ Based on the training and test scores for each model, **Random Forest (RF)** per
 
 This can also be measured by the R2 value, 
 
-![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/97f01c488ee42e1e971ef801b3622c6c81487383/Images/R%20squared.png)
+![R squared](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/feb75719-3131-4a17-9df3-5471ec93a92a)
 
 where Random Forest has a higher value compared to KNN, Boosting, Linear Regression, and SVR, indicating that Random Forest is highly effective in predicting values.
 ```
