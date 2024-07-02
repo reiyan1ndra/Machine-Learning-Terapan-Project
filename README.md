@@ -44,13 +44,17 @@ The dataset used for this project can be downloaded from [Kaggle](https://www.ka
 ### EDA Univariate
 Here is the analysis of EDA Univariate:
 *  Average of Daily Yield per Day
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/15ac849066923a8ae922629bf7c702f533907a29/Images/avg%20daily%20yield.png)
+   ![avg daily yield](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/d5883edd-a0d1-4118-88a7-70e63344e0ee)
+
 *  Average of AC & DC Power Generated per Day
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/15ac849066923a8ae922629bf7c702f533907a29/Images/avg%20ac%20dc%20power.png)
+   ![avg ac dc power](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/b3cd2313-eb5a-4f84-a324-ca37d6f5ed03)
+
 *  Average of Ambient and Module Temperature per Day
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/15ac849066923a8ae922629bf7c702f533907a29/Images/avg%20temp.png)
+   ![avg temp](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/c53bbc88-1c2a-4394-b66a-6b273be7107d)
+
 *  Average of Irradiation per Day
-   ![image.png](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/blob/15ac849066923a8ae922629bf7c702f533907a29/Images/irradiation.png)
+   ![irradiation](https://github.com/reiyan1ndra/Machine-Learning-Terapan-Project/assets/100987658/9d7e4a3d-4483-46ba-93e4-e29b1a30b90a)
+
 
 Descriptive Statistics Summary of Solar Power Generation and Weather Data:
 
